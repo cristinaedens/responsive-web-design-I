@@ -1,3 +1,391 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.site-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 1.25%;
+  }
+
+  
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.3em;
+  font-weight: bold;
+  word-spacing: 145px;
+  text-align: center;
+}
+nav a {
+  color: #AAA7A7;
+  text-decoration: none;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  margin: 3%;
+  width: 100%;
+}
+
+.innovation {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  
+}
+
+button {
+  background-color: rgb(255, 255, 255); /* Green */
+  border: 1px solid black;
+  color: rgb(7, 7, 7);
+  width: 200px;
+  height: 35px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5%;
+}
+button a {
+  text-decoration: none;
+  color: black;
+}
+
+.header-img {
+  margin-left: 10%;
+  width: 30%;
+  height: 20%;
+}
+
+.first-feature {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 1%;
+}
+
+.feature {
+  width: 50%;
+  padding: 0 15px 0 0;
+  font-size: 23px;
+}
+
+.about {
+  width: 49%;
+  padding: 0 15px 0 0;
+  font-size: 23px;
+}
+
+.middle-img {
+  width: 100%;
+  height: 30vh;
+}
+
+.second-feature {
+  margin-top: 1%;
+  display: flex;
+}
+.services {
+  width: 32%;
+  padding: 0 15px 0 0;
+  font-size: 23px;
+}
+
+.product {
+  width: 32%;
+  padding: 0 15px 0 0;
+  font-size: 23px;
+}
+
+.vision {
+  width: 32%;
+  padding: 0 15px 0 0;
+  font-size: 23px;
+}
+
+hr {
+  border-top: 2px solid black;
+}
+
+h4 {
+  padding-top: 4%;
+}
+
+address {
+  font-size: 18px;
+}
+
+.copyright {
+  text-align: center;
+}
+
+@media (max-width: 800px){
+
+  nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    top: 47px;
+    left: 100px
+     }
+  
+  .logo {
+    width: 110px;
+    height: 25px;
+    position: relative;
+    bottom: 50px;
+    right: 360px;
+  }
+
+ .header-img{
+   display:none;
+ }
+
+ .innovation{
+   position: relative;
+   top: 75px;
+   
+ }
+ header {
+   padding-bottom: 90px;
+ }
+
+ .about, .feature, .services, .product, .vision{
+   padding: 10px;
+ }
+ 
+
+  
+}
+
+@media (max-width: 500px){
+
+  .site-container{
+    margin: 2%;
+  }
+
+  nav{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+ position: relative;
+ top: 25px;
+ left: 10px;
+  }
+
+nav a{
+  padding: 1.2%
+}
+
+  .logo {
+    width: 110px;
+    height: 25px;
+    position: relative;
+    top: -235px;
+    left: 190px;
+  }
+  .header-img {
+    display:none;
+  }
+.innovation{
+ position: relative;
+ top: 30px; 
+}
+  
+
+  a{
+    border: 1px solid #dfdfdf
+    }
+
+    .first-feature{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .middle-img{
+      width: 100%;
+    height: 100px;
+    }
+
+    .second-feature{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .feature{
+      width:100%;
+      padding: 20px;
+    }
+    .about{
+      width:100%;
+      padding: 20px;
+    }
+    .services{
+      width:100%;
+      padding: 20px;
+    }
+
+    .product{
+      width:100%;
+      padding: 20px;
+    }
+
+    .vision{
+      width:100%;
+      padding: 20px;
+    }
+
+  }
 
